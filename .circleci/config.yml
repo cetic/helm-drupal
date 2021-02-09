@@ -1,14 +1,13 @@
-version: 2
-jobs:
-  build:
-    docker:
-      - image: alpine
-    steps:
-      - checkout
-      - run:
-          name: helm-github-pages
-          environment:
-            - GITHUB_PAGES_REPO: cetic/helm-charts
-            - HELM_CHART: drupal
-            - HELM_VERSION: 3.1.2
-          command: wget -O - https://gist.githubusercontent.com/alexnuttinck/2e9b8595e9a94ba3b3d00eea690e37ac/raw/9989a66c1de2eb4a8bce7c44ec5fbe1f43459762/publish.sh | sh
+# Use the latest 2.1 version of CircleCI pipeline process engine. See: https://circleci.com/docs/2.0/configuration-reference
+version: 2.1
+# Use a package of configuration called an orb.
+orbs:
+  # Declare a dependency on the welcome-orb
+  welcome: circleci/welcome-orb@0.4.1
+# Orchestrate or schedule a set of jobs
+workflows:
+  # Name the workflow "welcome"
+  welcome:
+    # Run the welcome/run job in its own container
+    jobs:
+      - welcome/run
