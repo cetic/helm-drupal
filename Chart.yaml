@@ -1,7 +1,8 @@
 ---
 apiVersion: v2
 name: drupal
-description: A Helm chart for Kubernetes
+description: Drupal is a free and open-source web content management framework written in PHP and distributed under the GNU General Public License. 
+icon: https://upload.wikimedia.org/wikipedia/commons/9/96/Druplicon.large.png
 
 # A chart can be either an 'application' or a 'library' chart.
 #
