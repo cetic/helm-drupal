@@ -1,7 +1,7 @@
 ---
 name: Feature request
 about: Suggest an idea for this project
-title: '[cetic/nifi] issue title'
+title: '[cetic/drupal] issue title'
 labels: ''
 assignees: ''
 

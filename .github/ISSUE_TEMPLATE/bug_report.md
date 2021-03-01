@@ -1,7 +1,7 @@
 ---
 name: Bug report
 about: Create a report to help us improve
-title: '[cetic/nifi] issue title'
+title: '[cetic/drupal] issue title'
 labels: ''
 assignees: ''
 
