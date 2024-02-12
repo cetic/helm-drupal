@@ -1,5 +1,6 @@
 # Helm Chart For Drupal.
---
+
+## $${\color{red}This \space project \space is \space not \space maintained \space anymore.}$$
 
 ![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)
 
